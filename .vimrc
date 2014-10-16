@@ -672,7 +672,7 @@ xnoremap <expr> D (mode() ==# "V" ? ':Linediff<cr>' : 'D')
 nnoremap UU :if &diff<bar>diffupdate<bar>else<bar>diffthis<bar>endif<cr>
 nnoremap Ud :if &diff<bar>diffupdate<bar>else<bar>Gdiff<bar>endif<cr>
 nnoremap Us :Gstatus<cr>
-nnoremap Ul :Glog<cr>
+nnoremap Ul :Gllog<cr>
 nnoremap Ug :Ggrep<space>
 nnoremap Ub :Gblame<cr>
 nnoremap Ue :Gedit<cr>
@@ -1282,3 +1282,4 @@ if isdirectory(expand(s:dir, 1))
 endif
 
 silent! source ~/.vimrc.local
+a
